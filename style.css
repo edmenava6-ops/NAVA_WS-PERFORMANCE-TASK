@@ -1,0 +1,144 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #222;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #174a83;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #9bc7f5;
+    border-color: #246bb2;
+}
+
+.error {
+    border: 2px solid #dc3545 !important;
+    background-color: #fff5f5;
+}
+
+.error-message {
+    display: block;
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 18px 0 5px;
+}
+
+.agreement input {
+    margin-top: 3px;
+}
+
+.agreement label {
+    font-weight: normal;
+}
+
+.toggle-btn {
+    margin-bottom: 20px;
+    background: #68788a;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.submit-btn {
+    flex: 1;
+    background: #1769aa;
+    color: white;
+}
+
+.reset-btn {
+    flex: 1;
+    background: #e1e5ea;
+    color: #222;
+}
+
+.toggle-btn {
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#successMessage {
+    color: #16753a;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+}
